@@ -1,0 +1,1 @@
+docker run -p 4000:4000 --rm -v $pwd/src:/srv/jekyll/microcms -v $pwd/:/tools -it jekyll/jekyll:latest sh -c 'cd microcms && bundle install && bundle exec jekyll serve --host=0.0.0.0'
